@@ -32,10 +32,10 @@ const App: FC = () => {
     <div className="App">
       <div className="header">
         <div className="inputContainer">
-          <input type="test" placeholder="EXEMPLE" name="task" value={task} onChange={handleChange}></input>
-          <input type="number" placeholder="deadline" name="deadline" value={deadline} onChange={handleChange}></input>
+          <input type="test" placeholder="Nom Complet" name="task" value={task} onChange={handleChange}></input>
+          <input type="number" placeholder="Age" name="deadline" value={deadline} onChange={handleChange}></input>
         </div>
-        <button onClick={addTask}> Add Tcask</button>
+        <button onClick={addTask}> ajouter une Personne</button>
       </div>
       <div className="todoList">
         {todoList.map((task: ITask, key: number) => {
